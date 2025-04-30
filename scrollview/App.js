@@ -1,10 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, ScrollView, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, ScrollView, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView>
-    <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}>
+    <ScrollView>
     <View style={styles.container}>
     <View style={styles.container}>
       <Text style={styles.text1}>navbar</Text>
@@ -20,12 +19,19 @@ export default function App() {
       <Text style={styles.text3}>Section 2</Text>
       <StatusBar style="auto" />
     </View>
+
+    <View style={styles.section3}>
+      <Text style={styles.text3}>Section 3</Text>
+      <StatusBar style="auto" />
+    </View>
     
     <View style={styles.footer}>
       <Text style={styles.text4}>Footer</Text>
       <StatusBar style="auto" />
     </View>
-    </View>
+    </View></ScrollView>
+
+
   );
   
   
@@ -53,9 +59,21 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
-    width: 500
+    width: 500,
+    flex: 5
     
   },
+
+  section3: {
+    flex: 5,
+    backgroundColor: 'purple',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 500,
+    flex: 5
+    
+  },
+
   footer: {
     flex: 1,
     backgroundColor: 'orange',
