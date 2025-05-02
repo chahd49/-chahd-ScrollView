@@ -7,9 +7,32 @@ export default function App() {
   return (
     
     <View style={styles.container}>
+    <View style={styles.container11}>
+    <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}>
+
+     <View style={styles.container1}>
+      <Text style={styles.text1}>navbar</Text>
+      <Text></Text>
+    </View>
+
+    <View style={styles.container2}>
+      <Text style={styles.text2}>Second Section</Text>
+    </View>
+
+    <View style={styles.container3}>
+    <Text style={styles.text3}>Third Section</Text>
+    </View>
+
+    <View style={styles.container4}>
+    <Text style={styles.text4}>Fourth Section</Text>
+    </View>
     <View style={styles.container1}>
       <Text style={styles.text1}>navbar</Text>
-      <StatusBar style="auto" />
+      <Text></Text>
+    </View>
+    </ScrollView>
+
+      
     </View>
 
     <ScrollView>
@@ -20,7 +43,7 @@ export default function App() {
     </View> */}
 
     <View style={styles.root2}>
-          <ScrollView contentContainerStyle={{ height: 1500 }}>
+          <ScrollView contentContainerStyle={{ height: 1600 }}>
           <View style={styles.section2}>
       <Text style={styles.text3}>Section 2</Text>
       <StatusBar style="auto" />
@@ -40,7 +63,8 @@ export default function App() {
       <Text style={styles.text3}>Section 5</Text>
       <StatusBar style="auto" />
     </View>
-            <View style={styles.box1}></View>
+    
+            {/* <View style={styles.box1}></View>
             <View style={styles.box2}></View>
             <View style={styles.box1}></View>
             <View style={styles.box2}></View>
@@ -51,29 +75,13 @@ export default function App() {
             <View style={styles.box1}></View>
             <View style={styles.box2}></View>
             <View style={styles.box1}></View>
-            <View style={styles.box2}></View>
+            <View style={styles.box2}></View> */}
+
+            
           </ScrollView>
         </View>
 
-    <View style={styles.section2}>
-      <Text style={styles.text3}>Section 2</Text>
-      <StatusBar style="auto" />
-    </View>
-
-    <View style={styles.section3}>
-      <Text style={styles.text3}>Section 3</Text>
-      <StatusBar style="auto" />
-    </View>
-
-    <View style={styles.section2}>
-      <Text style={styles.text3}>Section 4</Text>
-      <StatusBar style="auto" />
-    </View>
-
-    <View style={styles.section3}>
-      <Text style={styles.text3}>Section 5</Text>
-      <StatusBar style="auto" />
-    </View>
+   
     
     </ScrollView>
 
@@ -100,7 +108,7 @@ const styles = StyleSheet.create({
     width: 500
   },
 
-  container1: {
+  container11: {
     height: '10%',
     backgroundColor: 'red',
     alignItems: 'left',
@@ -116,7 +124,7 @@ const styles = StyleSheet.create({
     width: 500
   },
   section2: {
-    height: '50%',
+    height: 400,
     backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
@@ -125,7 +133,7 @@ const styles = StyleSheet.create({
   },
 
   section3: {
-    height: '50%',
+    height: 400,
     backgroundColor: 'purple',
     alignItems: 'center',
     justifyContent: 'center',
@@ -164,7 +172,7 @@ const styles = StyleSheet.create({
   },
 
   root2: {
-    height: '100%',
+    height: '200%',
     width: '100%', 
   },
   box1: {
@@ -175,4 +183,57 @@ const styles = StyleSheet.create({
     height: 100,
     backgroundColor: 'purple',
   },
+
+  container1: {
+    backgroundColor: 'red',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 20,
+    width: 415,
+    height: 80,
+  },
+  text1: {
+    fontSize: 30,
+    color:"white"
+  },
+  container2: {
+    height: 80,
+    backgroundColor: 'green',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 20,
+    width: 415
+  },
+  text2: {
+    fontSize: 50,
+    color:"red"
+  },
+  container3: {
+  
+    backgroundColor: 'blue',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 20,
+    width: 415,
+    height: 80,
+  
+  },
+  text3: {
+    fontSize: 35,
+    color:"white"
+  },
+  container4: {
+
+    backgroundColor: 'pink',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: 20,
+    width: 415,
+    height: 80,
+  },
+  
+
+
+
+  
 });
